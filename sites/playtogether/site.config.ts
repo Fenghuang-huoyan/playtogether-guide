@@ -21,7 +21,7 @@ export const siteConfig = {
   homeDescription:
     'Unofficial English Play Together wiki for Steam AppID 3198850. Redeem-code status, beginner loop, fishing, insects, pets, Stars and Gems, jobs, events, and home parties on Kaia Island. Fan site for playtogether.wiki.',
   analytics: {
-    gaId: '',
+    gaId: 'G-Q21P2S3TL8',
   },
   art: {
     hero: '/images/official/steam/library-hero.jpg',
