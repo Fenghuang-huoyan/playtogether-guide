@@ -1,21 +1,15 @@
 # Adsterra — playtogether.wiki
 
-Native Banner is wired for the homepage and guide pages, immediately after Quick Answer (`afterQuickAnswer` in `sites/playtogether/ads.config.ts`). The slot component is rendered on those pages. The 404 page does not include the slot.
+Native Banner is wired for the homepage and guide pages, immediately after Quick Answer (`afterQuickAnswer` in `sites/playtogether/ads.config.ts`). The script is rendered once on those pages. The 404 page does not include the slot.
 
-The zone is still a placeholder. No third-party ad script is loaded.
+This zone uses a full script URL. There is no `/invoke.js` suffix, and `invokeBase` stays empty so the old host is not hardcoded.
 
 | Field | Value | Used in the script? |
 | --- | --- | --- |
-| Zone key | `ADSTERRA_NATIVE_BANNER_PLACEHOLDER` | No. Ids with the `ADSTERRA_` prefix are treated as empty. |
-| Script src | empty | No. |
-| `enabled` | `false` | No request is made. |
-
-When Adsterra issues a zone for **playtogether.wiki**:
-
-1. Set `enabled` to `true`.
-2. Replace `afterQuickAnswer.id` with that zone key.
-3. Set `afterQuickAnswer.scriptSrc` to the full script URL Adsterra issued. This game’s zone may or may not use an `/invoke.js` suffix. Paste the URL they give you. Leave `invokeBase` empty unless the dashboard’s URL is the old `invoke.js` form.
-4. Do not reuse a zone key or host from Invokyr, Heartopia, Megabonk, or any other site.
+| Zone key | `22747ad7e3ae2fc753e19532b035041b` | Yes. `afterQuickAnswer.id`, and the container id `container-22747ad7e3ae2fc753e19532b035041b` |
+| Script src | `https://bauval.org/21/22747ad7e3ae2fc753e19532b035041b` | Yes. Full `afterQuickAnswer.scriptSrc` |
+| Website ID | `6142615` | No. Ops note only |
+| Placement ID | `31868776` | No. Ops note only |
 
 Adult and sensitive categories stay off.
 

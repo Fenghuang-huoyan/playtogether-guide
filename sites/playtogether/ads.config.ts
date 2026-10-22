@@ -1,11 +1,13 @@
 /**
  * Adsterra Native Banner, directly after Quick Answer on the homepage and guide pages.
  *
- * Leave `scriptSrc` empty until Adsterra issues a zone for playtogether.wiki.
- * Do not paste a key or host from another game. Adult and sensitive categories stay off.
+ * This zone's invoke URL has no `/invoke.js` suffix. Set `scriptSrc` to the
+ * full script URL Adsterra issued for this site. Do not paste a key or host
+ * from another game.
  *
- * Only afterQuickAnswer exists, so a future script is emitted once per homepage and
- * guide page. The 404 page does not render a slot.
+ * When `scriptSrc` is empty, the fallback is still `${invokeBase}/${id}/invoke.js`.
+ * Adult and sensitive categories stay off. Only afterQuickAnswer exists, so the
+ * script is emitted once per homepage and guide page. The 404 page does not render a slot.
  */
 export type AdSlotConfig = {
   id: string;
@@ -18,15 +20,15 @@ export type AdSlotConfig = {
 
 const slots = {
   afterQuickAnswer: {
-    id: 'ADSTERRA_NATIVE_BANNER_PLACEHOLDER',
+    id: '22747ad7e3ae2fc753e19532b035041b',
     format: 'native-banner',
-    scriptSrc: '',
+    scriptSrc: 'https://bauval.org/21/22747ad7e3ae2fc753e19532b035041b',
   },
 } as const satisfies Record<string, AdSlotConfig>;
 
 export const adsConfig = {
   network: 'adsterra' as const,
-  enabled: false,
+  enabled: true,
   invokeBase: '',
   /** Site-wide full script URL. A slot `scriptSrc` overrides this. */
   scriptSrc: '',

@@ -9,7 +9,7 @@ quickAnswer:
   - "Play Together Guide is a fan site aimed at https://playtogether.wiki. It is not affiliated with HAEGIN Co.,Ltd., Valve, or Steam."
   - "The pages are English on purpose. The player base includes Southeast Asia, Korea, and Japan. The Steam language list is wider than this wiki."
   - "Artwork on the pages is official Steam store art for AppID 3198850, stored with the site. Credits are in the attribution file next to the images."
-  - "Google Analytics is not loaded. The Adsterra slot after Quick Answer is a placeholder with an empty script. Coupon tables are reports, not a redeem service."
+  - "Google Analytics is not loaded. One Adsterra Native Banner loads after Quick Answer on the homepage and guide pages, and not on the 404 page. Coupon tables are reports, not a redeem service."
 sources:
   - label: "Steam store — Play Together"
     url: "https://store.steampowered.com/app/3198850/Play_Together/"
@@ -56,7 +56,7 @@ The site is static. It has no accounts and does not ask for your Play Together l
 
 `analytics.gaId` is empty, so Google Analytics is not loaded. There is no measurement ID yet.
 
-An Adsterra Native Banner hook named `afterQuickAnswer` sits under Quick Answer on the homepage and on guide pages. The zone id is still the placeholder `ADSTERRA_NATIVE_BANNER_PLACEHOLDER`, the script URL is empty, and ads are disabled. The 404 page does not include the slot. When a real zone exists, it should be a zone issued for playtogether.wiki, with adult and sensitive categories left off.
+An Adsterra Native Banner named `afterQuickAnswer` loads once, immediately under Quick Answer, on the homepage and on guide pages. The script is the zone Adsterra issued for playtogether.wiki. The 404 page does not include the slot. Adult and sensitive categories stay off.
 
 ## Corrections
 

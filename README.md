@@ -11,13 +11,13 @@ Players join from Southeast Asia, Korea, Japan, and elsewhere. The site language
 | Layer | Path | Role |
 | --- | --- | --- |
 | Site config | `sites/playtogether/site.config.ts` | Domain, Steam AppID, analytics, nav |
-| Ads | `sites/playtogether/ads.config.ts` | Adsterra Native Banner hook after Quick Answer |
+| Ads | `sites/playtogether/ads.config.ts` | Adsterra Native Banner after Quick Answer |
 | Active site | `sites/active` → `playtogether` | What the build actually reads |
 | Framework | `framework/` | Layout, Quick Answer, ad slot, SEO |
 | Content | `content/playtogether/` | Guide pages and JSON |
 | Routes | `src/pages/` | Home, guide slug, 404 |
 
-`analytics.gaId` is empty, so gtag is not injected. The homepage and guide pages render an `afterQuickAnswer` ad slot, and the slot stays inactive while the zone id is the `ADSTERRA_` placeholder and the script URL is empty. The 404 page does not render an ad slot. See [ADS.md](ADS.md).
+`analytics.gaId` is empty, so gtag is not injected. The homepage and guide pages load one Adsterra Native Banner after Quick Answer. The 404 page does not render an ad slot. See [ADS.md](ADS.md).
 
 ## Scripts
 
@@ -62,7 +62,6 @@ Do this in the Vercel dashboard when you are ready. Nothing here buys a domain o
 ## Still to fill in
 
 - **GA4.** Set `analytics.gaId` in `sites/playtogether/site.config.ts` when you have a measurement id. Leave it empty until then.
-- **Adsterra.** Paste the Native Banner script for this domain into `sites/playtogether/ads.config.ts`. Steps are in [ADS.md](ADS.md).
 - **DNS.** Attach `playtogether.wiki` in Vercel and create the records Vercel displays. This repo does not ship DNS.
 
 Steam art on the homepage is stored under `public/images/official/steam/` with `ATTRIBUTION.txt`.
