@@ -1,0 +1,46 @@
+[
+  {
+    "q": "Is Play Together free on Steam?",
+    "a": "Yes. The Steam appdetails payload on 22 October 2026 set is_free to true for AppID 3198850. The store page also lists in-app purchases. HAEGIN’s help articles say Stars can be bought with Gems, and that Gems can be bought on Google Play or the Apple App Store. Those store names describe the mobile articles. The Steam client has its own purchase flow.",
+    "featured": true
+  },
+  {
+    "q": "Where do I enter a coupon code?",
+    "a": "HAEGIN’s coupon notices say: Phone icon, Settings, Enter Coupon, then Claim Reward. Rewards go to the in-game mailbox. iOS players use the coupon page at haegin.kr/playtogether/coupon. Each coupon is once per account. MobileMatters says the Coupon button appears after the tutorial. If the button is missing, finish the opening and restart the client, which is the step the official notices give when a redeem fails.",
+    "featured": true
+  },
+  {
+    "q": "How do I fish?",
+    "a": "Equip a Fishing Rod from Bag, then Tool. Stand at water that is deep enough, on land, and use the rod. Rods are sold at the Fishing Shop by the Plaza docks and in the Shop. Bait changes which fish are likely and can be crafted at the Kaia Workshop. Day, night, location, and timing also change the odds. You can sell a catch or put it in a Fish Tank.",
+    "featured": true
+  },
+  {
+    "q": "What are Stars and Gems?",
+    "a": "Stars buy costumes, rides, furniture, and more. HAEGIN says you earn them from minigames, fishing, daily missions, and ad rewards, or buy them in the Shop with Gems. The balance sits at the top right of the screen. Gems are the premium currency in the “How to buy more Gems?” article, purchased through the mobile stores named there. In-game Achievements on the Phone also award Gems and have five stages.",
+    "featured": true
+  },
+  {
+    "q": "Does this site list every fish and insect?",
+    "a": "No species spreadsheet is published on the Steam page or in the English help articles checked on 22 October 2026. Steam’s own count is over 600 fish and over 300 insects, and fish differ by spot. The Illustrated Book inside the game is the collection list. This wiki explains the rules for finding them."
+  },
+  {
+    "q": "Where are part-time jobs?",
+    "a": "The English quest article names two: help Dr. Farbe collect insects, and help the Fireman collect branches. Camping at the Camping Ground also includes part-time jobs and challenges. The Camping Ground is in the Plaza, opposite the beach, between the School and the Ghost House. Pay amounts are not in that article."
+  },
+  {
+    "q": "How do pets grow?",
+    "a": "Official help: Egg, then Baby Pet, then Full-Grown Pet. Resolving Desires grants Stars and fills the bond gauge. A full gauge levels the pet, and a level can unlock tricks. Eggs, food, beds, and toys are at Plaza, Pet Shop. Pet furniture is under Phone, Furniture Shop, Pet Furniture. Combining pets uses four max-level pets plus currency, at an NPC in the Camping Ground, and resets the pet to level 1 with its base name."
+  },
+  {
+    "q": "Can I play with phone friends on Steam?",
+    "a": "The Steam store page says you can link a mobile device with Steam, and the category list includes cross-platform multiplayer. The hub guide puts account linking in the Phone Settings menu. Follow the prompt in that menu. This wiki does not publish a click-path past what those two sources say."
+  },
+  {
+    "q": "Which languages does the Steam version include?",
+    "a": "The appdetails language list on 22 October 2026 names English, French, German, Vietnamese, Arabic, Indonesian, Japanese, Simplified Chinese, Traditional Chinese, Thai, Korean, Spanish - Latin America, and Portuguese - Brazil. The store table shows these as interface languages. This guide is written in English."
+  },
+  {
+    "q": "Is playtogether.wiki an official site?",
+    "a": "No. It is a fan guide. HAEGIN publishes the game, the Help Center, and the notice board. The Zendesk address in the footer is HAEGIN’s support contact from the Steam page. It does not reach the editors of this wiki."
+  }
+]
