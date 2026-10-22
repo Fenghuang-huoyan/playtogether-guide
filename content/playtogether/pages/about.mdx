@@ -1,0 +1,63 @@
+---
+title: "About Play Together Guide — Fan Site Disclaimer"
+description: "playtogether.wiki is an unofficial English fan guide for Play Together on Steam. Disclaimer, image credits, and how coupons and analytics are handled."
+h1: "About this guide"
+section: "About"
+order: 12
+verifiedAgainst: "Site policy for playtogether.wiki, plus the Steam store page and appdetails API checked 22 Oct 2026."
+quickAnswer:
+  - "Play Together Guide is a fan site aimed at https://playtogether.wiki. It is not affiliated with HAEGIN Co.,Ltd., Valve, or Steam."
+  - "The pages are English on purpose. The player base includes Southeast Asia, Korea, and Japan. The Steam language list is wider than this wiki."
+  - "Artwork on the pages is official Steam store art for AppID 3198850, stored with the site. Credits are in the attribution file next to the images."
+  - "Google Analytics is not loaded. The Adsterra slot after Quick Answer is a placeholder with an empty script. Coupon tables are reports, not a redeem service."
+sources:
+  - label: "Steam store — Play Together"
+    url: "https://store.steampowered.com/app/3198850/Play_Together/"
+  - label: "HAEGIN Help Center"
+    url: "https://help-playtogether.haegin.kr/hc/en-us"
+  - label: "HAEGIN notices"
+    url: "https://notice.haegin.kr/"
+related:
+  - href: "/codes"
+    label: "Codes"
+  - href: "/faq"
+    label: "FAQ"
+  - href: "/beginner-guide"
+    label: "Beginner guide"
+banner: "/images/official/steam/library-hero.jpg"
+bannerAlt: "Official Steam library hero for Play Together, the logo over a beach with three characters and a white puppy"
+---
+
+import Callout from '@framework/components/Callout.astro';
+
+This is a short English wiki for **Play Together**, Steam AppID **3198850**, built as a static site for **playtogether.wiki**.
+
+## Disclaimer
+
+playtogether.wiki is an unofficial fan-made guide. It is not affiliated with, endorsed by, or sponsored by HAEGIN Co.,Ltd., Valve, or Steam. Game names, artwork, and trademarks belong to their owners.
+
+Nothing here is account support. The address `support@playtogether.zendesk.com` is the support contact on the Steam store page. Mail sent there reaches HAEGIN’s Zendesk, not the editors of this wiki. This site has no player inbox of its own.
+
+Coupon codes expire. The [codes](/codes) page says where each string came from and asks you to verify it in the client. This website cannot redeem a code, restore a missed mailbox reward, or reverse a purchase.
+
+Numbers that can move — review scores, Gem pack prices, fish spawns, event dates — are dated. If a page and your client disagree, trust the client, then the help article it was quoting.
+
+<Callout kind="note" title="What “checked” means">
+“Checked 22 Oct 2026” means the Steam API, the store page, and the linked HAEGIN articles were read that day. It does not mean someone played every mode on that date.
+</Callout>
+
+## Images
+
+Hero, capsule, header, and screenshots are official Steam store assets for AppID 3198850, downloaded from the Steam CDN and served from this site so pages do not hotlink Steam. The file list and source URLs are in `public/images/official/steam/ATTRIBUTION.txt` in the project, and the same note is linked from the homepage credit line.
+
+## Privacy, analytics, and ads
+
+The site is static. It has no accounts and does not ask for your Play Together login.
+
+`analytics.gaId` is empty, so Google Analytics is not loaded. There is no measurement ID yet.
+
+An Adsterra Native Banner hook named `afterQuickAnswer` sits under Quick Answer on the homepage and on guide pages. The zone id is still the placeholder `ADSTERRA_NATIVE_BANNER_PLACEHOLDER`, the script URL is empty, and ads are disabled. The 404 page does not include the slot. When a real zone exists, it should be a zone issued for playtogether.wiki, with adult and sensitive categories left off.
+
+## Corrections
+
+A wrong reward line or a moved NPC should be fixed in the page that states it, with the source link kept. Uncertain data stays labeled. The in-game Illustrated Book remains the species list for fish and insects.

@@ -1,0 +1,93 @@
+{
+  "checked": "22 Oct 2026",
+  "groups": [
+    {
+      "id": "newest",
+      "title": "Reported lately — verify in-game",
+      "intro": "These strings come from public English code pages. This site did not redeem them. A reward cell is filled only when that page printed one. If the client rejects the code, stop. The mailbox is the proof, and only after the game accepts the coupon.",
+      "rows": [
+        {
+          "code": "PT26OCTMONTHLY",
+          "reward": "30 Gems and 1 Super Premium Card Pack",
+          "status": "newest",
+          "statusLabel": "Verify in-game",
+          "note": "UrGameTips, updated 14 Oct 2026, printed this reward. MobileMatters’ 30 Sep 2026 page did not list the code. Not confirmed on a HAEGIN notice read for this check."
+        },
+        {
+          "code": "PTMAGICACADEMY",
+          "reward": "Not printed",
+          "status": "conflict",
+          "statusLabel": "Reward unpublished",
+          "note": "MobileMatters (byline 30 Sep 2026, page titled October 2026) called it new. UrGameTips’ 14 Oct list did not include it. No reward line was printed."
+        },
+        {
+          "code": "PT26AUGMONTHLY",
+          "reward": "Not printed",
+          "status": "stale",
+          "statusLabel": "Likely stale",
+          "note": "Still in MobileMatters’ “new” list on 30 Sep 2026, with no reward. The name points at August. Treat it as expired unless the client still accepts it."
+        }
+      ]
+    },
+    {
+      "id": "official-closed",
+      "title": "Official coupons whose posted window has ended",
+      "intro": "HAEGIN published these on the notice board with an end time of 5 August 2026, 14:59 UTC. That window is closed on this check. MobileMatters also files both strings as expired. Rewards below are the ones the notices printed.",
+      "rows": [
+        {
+          "code": "PTTEENIEPINGTY",
+          "reward": "1 Theme Draw Ticket, 1 Lucky Gem Box, 1 Lucky Star Box, 2 Premium Card Packs",
+          "status": "expired",
+          "statusLabel": "Window closed",
+          "note": "Notice 8326. Catch! Teenieping like-and-comment goal. Once per account. Mailbox delivery."
+        },
+        {
+          "code": "PTTEENIEPINGTYSM",
+          "reward": "100 Gems, 1 Lucky Gem Box, 1 Super Premium Card Pack, 500 Upgradites, 1 Magic Pet Accessory Potion",
+          "status": "expired",
+          "statusLabel": "Window closed",
+          "note": "Notice 8329. Second Teenieping goal, after the YouTube subscriber target. Same end time as PTTEENIEPINGTY."
+        }
+      ]
+    },
+    {
+      "id": "expired",
+      "title": "Already filed as expired",
+      "intro": "MobileMatters listed these as inactive on 30 Sep 2026 and did not print rewards. They are here so you can skip them. The two Teenieping codes above are omitted from this table because the official notices already document them.",
+      "rows": [
+        { "code": "PTFENNECFOX", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PTGHOSTSTORY", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PTVICEPRINCESS", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PTCTPPLAYNOW", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PTXCATCHTEENIEPING", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PTTROPICAL", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PTGORILLAWOW", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PT26JULYMONTHLY", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PTSUMMERFESTIVAL", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PTSUMMERFES", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PTWEATHERSTATION", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PT26JUNEMONTHLY", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PTMETEORSHOWER", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PTSUSHIMASTER", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "2026PT5HBD", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "26MAYMONTHLYPT", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "NEOKAIAPT", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "FACEDUMP100PT", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "TREASUREHUNTPT", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "DRAGONVILLAGEPT", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PTSTARBEAT", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "SCHOOLOFROCKPT", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "FLOWERFAIRYPT", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "20LUNARNEWYEAR26", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PTFORTUNETABLE", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "LEGENDDERBYPT", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "PLAYTOGETHERMARRIAGE", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "ICEAGEPT", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "MRHOTDOGPT", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "THANKU25PT", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "SPIRITHUNT", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." },
+        { "code": "NEWYEARSPARTYPT", "reward": "Not printed", "status": "expired", "statusLabel": "Reported expired", "note": "MobileMatters expired list, 30 Sep 2026." }
+      ]
+    }
+  ]
+}
