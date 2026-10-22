@@ -26,8 +26,11 @@
   --shadow: 6px 6px 0 #0e4c6e;
   --serif: "Fredoka", "Outfit", "Segoe UI", sans-serif;
   --sans: "Outfit", "Segoe UI", sans-serif;
-  --content: 74rem;
-  --measure: 40rem;
+  /* 96rem = 1536px. Was 74rem (1184px): on a 1920px screen each gutter drops from 368px to 192px. */
+  --content: 96rem;
+  --measure: 46rem;
+  --shore-waves: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='480' viewBox='0 0 220 480'%3E%3Cpath d='M0 18c34 16 58-14 96 0s56 16 124 0v18c-40 10-62-12-104 0S42 48 0 34z' fill='%230c7ea8' fill-opacity='.2'/%3E%3Cpath d='M0 46c36 12 60-12 100 0s58 14 120 0v14c-40 8-58-10-100 0s-62 10-120-2z' fill='%23ff6b8a' fill-opacity='.18'/%3E%3Cpath d='M0 150c32 18 56-16 96 0s58 18 124 0v22c-44 12-64-14-108 0S40 186 0 170z' fill='%230c7ea8' fill-opacity='.18'/%3E%3Cpath d='M0 182c34 14 62-14 100 0s60 14 120 0v16c-42 10-62-12-104 0s-64 12-116-2z' fill='%23ffd15c' fill-opacity='.42'/%3E%3Cpath d='M0 300c30 16 60-16 96 0s58 16 124 0v20c-44 12-64-12-108 0S38 334 0 318z' fill='%23ff6b8a' fill-opacity='.16'/%3E%3Cpath d='M0 328c36 12 60-12 100 0s58 14 120 0v14c-40 8-58-10-100 0s-62 10-120-2z' fill='%230c7ea8' fill-opacity='.16'/%3E%3Cpath d='M0 420c32 14 58-14 96 0s56 16 124 0v16c-40 8-60-12-104 0S40 448 0 434z' fill='%23ffd15c' fill-opacity='.32'/%3E%3Ccircle cx='62' cy='108' r='34' fill='%23ffd15c' fill-opacity='.78'/%3E%3Ccircle cx='62' cy='108' r='14' fill='%23fff8ef' fill-opacity='.5'/%3E%3Cg fill='%23ff6b8a' fill-opacity='.48' transform='translate(162 230)'%3E%3Ccircle cx='0' cy='-18' r='14'/%3E%3Ccircle cx='16' cy='-6' r='14'/%3E%3Ccircle cx='10' cy='16' r='14'/%3E%3Ccircle cx='-10' cy='16' r='14'/%3E%3Ccircle cx='-16' cy='-6' r='14'/%3E%3Ccircle cx='0' cy='2' r='7' fill='%23ffd15c' fill-opacity='.9'/%3E%3C/g%3E%3Cg fill='%23ff6b8a' fill-opacity='.34' transform='translate(46 390)'%3E%3Ccircle cx='0' cy='-11' r='9'/%3E%3Ccircle cx='10' cy='-3' r='9'/%3E%3Ccircle cx='6' cy='10' r='9'/%3E%3Ccircle cx='-6' cy='10' r='9'/%3E%3Ccircle cx='-10' cy='-3' r='9'/%3E%3C/g%3E%3Ccircle cx='156' cy='78' r='11' fill='%23ff6b8a' fill-opacity='.28'/%3E%3Cg fill='%23b08968'%3E%3Ccircle cx='18' cy='70' r='1.15' opacity='.5'/%3E%3Ccircle cx='110' cy='40' r='.85' opacity='.4'/%3E%3Ccircle cx='186' cy='150' r='1' opacity='.38'/%3E%3Ccircle cx='24' cy='250' r='1.1' opacity='.42'/%3E%3Ccircle cx='130' cy='270' r='.8' opacity='.36'/%3E%3Ccircle cx='90' cy='340' r='1' opacity='.4'/%3E%3Ccircle cx='170' cy='360' r='.75' opacity='.34'/%3E%3Ccircle cx='40' cy='450' r='.9' opacity='.4'/%3E%3C/g%3E%3C/svg%3E");
+  --shore-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cg fill='%23c4a574'%3E%3Ccircle cx='12' cy='22' r='.7' opacity='.28'/%3E%3Ccircle cx='74' cy='48' r='.55' opacity='.22'/%3E%3Ccircle cx='128' cy='18' r='.65' opacity='.2'/%3E%3Ccircle cx='36' cy='96' r='.5' opacity='.24'/%3E%3Ccircle cx='108' cy='112' r='.75' opacity='.22'/%3E%3Ccircle cx='150' cy='78' r='.45' opacity='.2'/%3E%3Ccircle cx='58' cy='142' r='.6' opacity='.18'/%3E%3C/g%3E%3Cg fill='%23ff6b8a'%3E%3Ccircle cx='96' cy='28' r='.45' opacity='.16'/%3E%3Ccircle cx='20' cy='132' r='.4' opacity='.14'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 * { box-sizing: border-box; }
@@ -36,16 +39,53 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    radial-gradient(880px 420px at 100% -8%, rgba(255, 209, 92, 0.72), transparent 58%),
-    radial-gradient(640px 380px at -8% 0%, rgba(255, 107, 138, 0.32), transparent 55%),
-    radial-gradient(520px 280px at 70% 18%, rgba(62, 198, 224, 0.35), transparent 60%),
-    linear-gradient(180deg, #8adcf6 0%, #e7f8ff 240px, #fff6ea 100%);
+  background-color: #fff4e6;
+  background-image:
+    var(--shore-grain),
+    radial-gradient(640px 520px at -6% 8%, rgba(255, 107, 138, 0.28), transparent 62%),
+    radial-gradient(760px 560px at 106% -4%, rgba(255, 209, 92, 0.62), transparent 60%),
+    radial-gradient(520px 640px at 0% 62%, rgba(255, 209, 92, 0.2), transparent 68%),
+    radial-gradient(560px 680px at 100% 48%, rgba(255, 107, 138, 0.14), transparent 66%),
+    radial-gradient(480px 420px at 0% 100%, rgba(12, 126, 168, 0.12), transparent 70%),
+    radial-gradient(420px 360px at 100% 100%, rgba(255, 209, 92, 0.16), transparent 72%),
+    linear-gradient(180deg, #8edff6 0%, #f6d7c4 210px, #fff3e2 520px, #fff6ea 100%);
+  background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 160px 160px, auto, auto, auto, auto, auto, auto, auto;
   color: var(--ink);
   font-family: var(--sans);
   font-size: 1.05rem;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
+}
+/* Shore motif sits in the gutters outside the 96rem shell. Below ~1800px the shell is already nearly full-bleed. */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  width: max(0px, calc((100% - var(--content)) / 2));
+  pointer-events: none;
+  background-image: var(--shore-waves), linear-gradient(180deg, rgba(255, 209, 92, 0.2), rgba(255, 107, 138, 0.1) 48%, rgba(12, 126, 168, 0.1));
+  background-repeat: repeat-y, no-repeat;
+  background-size: min(100%, 240px) 480px, auto;
+  background-position: center top, 0 0;
+}
+body::before { left: 0; }
+body::after {
+  right: 0;
+  transform: scaleX(-1);
+  background-position: center 140px, 0 0;
+}
+@media (max-width: 1799px) {
+  body::before,
+  body::after { display: none; }
+}
+main,
+.site-footer {
+  position: relative;
+  z-index: 1;
 }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
@@ -76,9 +116,11 @@ button, input, select { font: inherit; color: inherit; }
   position: sticky;
   top: 0;
   z-index: 40;
-  background: rgba(14, 76, 110, 0.94);
+  background:
+    linear-gradient(90deg, rgba(255, 107, 138, 0.18), transparent 30%, transparent 70%, rgba(255, 209, 92, 0.16)),
+    rgba(14, 76, 110, 0.96);
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 209, 92, 0.35);
+  border-bottom: 1px solid rgba(255, 209, 92, 0.45);
 }
 .header-row {
   display: flex;
@@ -383,8 +425,8 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.03e
 @media (min-width: 1040px) {
   .layout {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 15.5rem;
-    gap: 1.25rem;
+    grid-template-columns: minmax(0, 1fr) 16.5rem;
+    gap: 1.5rem;
     align-items: start;
   }
 }
@@ -410,7 +452,11 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.03e
   font-size: 0.92rem;
 }
 .checked b { color: var(--ink-on-paper); font-weight: 600; }
-.prose { max-width: 46rem; }
+.prose { max-width: var(--measure); }
+@media (min-width: 1040px) {
+  .guide .prose:has(.code-board) { max-width: none; }
+  .guide .prose:has(.code-board) > :not(.code-board) { max-width: var(--measure); }
+}
 .prose h2 { margin: 1.6rem 0 0.4rem; font-size: 1.7rem; color: var(--ink-2); }
 .prose h3 { margin: 1.2rem 0 0.3rem; font-size: 1.25rem; color: var(--ink-2); }
 .prose p, .prose li { color: #24384a; }
@@ -530,6 +576,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.03e
   padding: 1.5rem 0 2.5rem;
   background: #0e4c6e;
   color: var(--cream-dim);
+  box-shadow: inset 0 3px 0 #ffd15c;
 }
 .footer-grid { display: grid; gap: 1.2rem; }
 @media (min-width: 800px) {
